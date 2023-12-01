@@ -10,6 +10,15 @@ Run the script with the following command:
 poetry run python run.py <ics_file_paths> --output=json
 ```
 
+### Datasette
+
+You can use the `datasette` command to run a Datasette server with the generated SQLite database:
+
+```shell
+pip install datasette
+datasette serve <database_path>
+```
+
 ## Views
 
 * `events_with_guests`. Only events that have at least one guest are included in this view. Guests entries like `%group.calendar.google.com` are excluded.
