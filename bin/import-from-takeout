@@ -1,0 +1,28 @@
+#!/bin/zsh
+
+cd "${0%/*}/.."
+
+set -eo pipefail
+
+# Check if a directory argument is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
+
+directory=$1
+
+# Find all .ics files and store them in an array
+IFS=$'\n' ics_files=($(fd --type=f --glob "*.ics" "$directory"))
+
+# Check if any .ics files are found
+if [ ${#ics_files[@]} -eq 0 ]; then
+    echo "No .ics files found in the directory."
+    exit 1
+fi
+
+echo "Found ${#ics_files[@]} .ics files:"
+printf '%s\n' "${ics_files[@]}"
+
+poetry run python run.py "${ics_files[@]}" --output=sqlite
+open events.db
