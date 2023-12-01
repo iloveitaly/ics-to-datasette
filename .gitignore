@@ -1,3 +1,4 @@
 /events.db
 /.mypy_cache
 /.venv
+__pycache__
