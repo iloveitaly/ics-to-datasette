@@ -5,6 +5,10 @@ description = ""
 authors = ["Michael Bianco <mike@mikebian.co>"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/iloveitaly/ics-to-datasette"
+
+[tool.poetry.scripts]
+ics-to-datasette = "ics_to_datasette:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -12,6 +16,10 @@ ics = "^0.7.2"
 click = "^8.1.7"
 sqlite-utils = "^3.35.2"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+isort = "^5.12.0"
 
 [build-system]
 requires = ["poetry-core"]
