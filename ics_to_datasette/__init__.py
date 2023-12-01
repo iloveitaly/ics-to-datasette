@@ -78,7 +78,7 @@ def save_to_sqlite(events, dbname):
 
 
 @click.command()
-@click.argument("ics_files", type=click.File("r"), nargs=-1)
+@click.argument("ics_files", type=click.File("r"), nargs=-1, required=True)
 @click.option(
     "--output",
     type=click.Choice(["json", "sqlite"], case_sensitive=False),
