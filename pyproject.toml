@@ -1,11 +1,19 @@
 [tool.poetry]
 name = "ics-to-datasette"
 version = "0.1.1"
-description = ""
+description = "Convert an ICS file to a SQLite database"
 authors = ["Michael Bianco <mike@mikebian.co>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/iloveitaly/ics-to-datasette"
+keywords = [
+  "ics",
+  "calendar",
+  "datasette",
+  "sqlite",
+  "sqlite-database",
+  "datasette-tool",
+]
 
 [tool.poetry.scripts]
 ics-to-datasette = "ics_to_datasette:main"
