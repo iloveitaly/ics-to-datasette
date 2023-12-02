@@ -10,6 +10,12 @@ Run the script with the following command:
 poetry run python run.py <ics_file_paths> --output=json
 ```
 
+### Getting Calendar Data From Google Calendar
+
+You can download your calendar data from Google Calendar by going to [Google Takeout](https://takeout.google.com/settings/takeout) and selecting the "Calendar" option. You can then extract the downloaded zip file and run the script on the extracted ICS files.
+
+Select `tgz` to avoid multiple archives from being created due to file size limits.
+
 ### Datasette
 
 You can use the `datasette` command to run a Datasette server with the generated SQLite database:
