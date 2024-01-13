@@ -4,6 +4,13 @@ This repository contains a script that converts ICS calendar files to SQLite dat
 
 ## Usage
 
+```shell
+pip install ics-to-datasette
+ics-to-datasette <ics_file_paths> --output=json
+```
+
+## Development
+
 Run the script with the following command:
 
 ```shell
