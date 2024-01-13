@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ics-to-datasette"
-version = "0.1.1"
+version = "0.2.0"
 description = "Convert an ICS file to a SQLite database"
 authors = ["Michael Bianco <mike@mikebian.co>"]
 license = "MIT"
