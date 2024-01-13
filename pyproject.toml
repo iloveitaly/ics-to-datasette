@@ -22,12 +22,12 @@ ics-to-datasette = "ics_to_datasette:main"
 python = "^3.10"
 ics = "^0.7.2"
 click = "^8.1.7"
-sqlite-utils = "^3.35.2"
+sqlite-utils = "^3.36"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.11.0"
-isort = "^5.13.0"
+black = "^23.12.1"
+isort = "^5.13.2"
 
 [build-system]
 requires = ["poetry-core"]
