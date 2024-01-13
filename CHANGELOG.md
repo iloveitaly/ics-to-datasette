@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/iloveitaly/ics-to-datasette/compare/v0.2.0...v0.3.0) (2024-01-13)
+
+
+### Features
+
+* another attempt to publish pypi ([a510b69](https://github.com/iloveitaly/ics-to-datasette/commit/a510b69ad9177c65edd0f4f3f96feff420a5057a))
+
+
+
 # [0.2.0](https://github.com/iloveitaly/ics-to-datasette/compare/v0.1.1...v0.2.0) (2024-01-13)
 
 
