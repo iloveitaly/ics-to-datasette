@@ -27,7 +27,7 @@ sqlite-utils = ">=3.36,<5.0"
 
 [tool.poetry.group.dev.dependencies]
 black = ">=23.12.1,<27.0.0"
-isort = ">=5.13.2,<9.0.0"
+isort = ">=5.13.2,<10.0.0"
 
 [build-system]
 requires = ["poetry-core"]
